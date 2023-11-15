@@ -50,9 +50,9 @@ if os.path.exists(file_path):
                 csv_writer.writerow([username, full_name, profile_url])
 
                 # Write the information to the text file
-                txt_file.write(f"Username: {username}\n")
-                txt_file.write(f"Full Name: {full_name}\n")
-                txt_file.write(f"Profile URL: {profile_url}\n")
+                txt_file.write(f"username: {username}\n")
+                txt_file.write(f"name: {full_name}\n")
+                txt_file.write(f"profile_url: {profile_url}\n")
                 txt_file.write("------\n")
 
         print(f"Output saved to followers_data.csv and followers_data.txt")

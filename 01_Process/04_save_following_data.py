@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 current_dir = os.getcwd()
 
 # Define the path to the HTML file
-file_path = os.path.join(current_dir, 'Process', 'following_html.txt')
+file_path = os.path.join(current_dir, '01_process', 'following_html.txt')
 
 # Check if the file exists
 if os.path.exists(file_path):
@@ -24,7 +24,7 @@ if os.path.exists(file_path):
         csv_writer = csv.writer(csv_file)
 
         # Write header row to CSV file
-        csv_writer.writerow(['Username', 'name', 'profile_url'])
+        csv_writer.writerow(['username', 'name', 'profile_url'])
 
         # Open a new text file for writing
         txt_file_path = os.path.join(current_dir, 'following_data.txt')
@@ -50,9 +50,9 @@ if os.path.exists(file_path):
                 csv_writer.writerow([username, full_name, profile_url])
 
                 # Write the information to the text file
-                txt_file.write(f"Username: {username}\n")
-                txt_file.write(f"Full Name: {full_name}\n")
-                txt_file.write(f"Profile URL: {profile_url}\n")
+                txt_file.write(f"username: {username}\n")
+                txt_file.write(f"name: {full_name}\n")
+                txt_file.write(f"profile_url: {profile_url}\n")
                 txt_file.write("------\n")
 
         print(f"Output saved to following_data.csv and following_data.txt")
