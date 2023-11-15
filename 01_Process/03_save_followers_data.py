@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 current_dir = os.getcwd()
 
 # Define the path to the HTML file
-file_path = os.path.join(current_dir, 'Process', 'followers_html.txt')
+file_path = os.path.join(current_dir, '01_process', 'followers_html.txt')
 
 # Check if the file exists
 if os.path.exists(file_path):
@@ -24,7 +24,7 @@ if os.path.exists(file_path):
         csv_writer = csv.writer(csv_file)
 
         # Write header row to CSV file
-        csv_writer.writerow(['Username', 'name', 'profile_url'])
+        csv_writer.writerow(['username', 'name', 'profile_url'])
 
         # Open a new text file for writing
         txt_file_path = os.path.join(current_dir, 'followers_data.txt')
