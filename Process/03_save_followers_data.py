@@ -6,14 +6,14 @@ from bs4 import BeautifulSoup
 current_dir = os.getcwd()
 
 # Define the path to the HTML file
-file_path = os.path.join(current_dir, 'Process', 'html_content.txt')
+file_path = os.path.join(current_dir, 'Process', 'followers_data.txt')
 
 # Check if the file exists
 if os.path.exists(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
-        html_content = file.read()
+        followers_data = file.read()
 
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(followers_data, 'html.parser')
 
     # Extract information about users from HTML
     user_info_divs = soup.find_all('div', class_='x1dm5mii')
