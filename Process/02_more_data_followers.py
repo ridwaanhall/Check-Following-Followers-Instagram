@@ -25,8 +25,8 @@ for user_div in user_divs:
     name = user_div.find('span', class_='x1lliihq').text
 
     # Print the results for each set of data
-    print(f"{username}'s profile picture (this data based on code: {profile_picture_alt})")
-    print(f"username: {username} (this data based on code: {username})")
-    print(f"url profile picture: (this based on code: {profile_picture_url})")
-    print(f"name: {name} (this data based on code: {name})")
+    print(f"{username}'s profile picture")
+    print(f"username: {username}")
+    print(f"url profile picture: {profile_picture_url}")
+    print(f"name: {name}")
     print("------")
