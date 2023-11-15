@@ -1,4 +1,4 @@
-# Following FOllowers Instagram
+# Check Following FOllowers Instagram
 
 ## Description
 This project serves as a tool for processing and analyzing data related to people we follow and those who follow us on Instagram. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
@@ -9,7 +9,7 @@ This project serves as a tool for processing and analyzing data related to peopl
 3. Install the required library by running the following command in the terminal or command prompt:
 
 ## Usage
-1. Place change data inside the HTML file from an Instagram follower profile in the 'Process' directory with the name 'html_content.txt'.
+1. Place change data inside the HTML file from an Instagram follower profile in the '01_process' directory with the name 'followers_html.txt' and 'following_html.txt'.
 2. Run the script `03_save_followers_data.py` to extract and save follower data.
 3. View the results in the `followers_data.csv` and `followers_data.txt` files.
 
@@ -23,4 +23,4 @@ If you would like to contribute to this project, please create a pull request an
 - Processing Data who follows you, who you follow, who you both follow, and who you don't follow.
 
 ---
-**Note**: Be sure to replace or adjust certain sections as needed for your project's specifics.
+**Note**: Be sure to replace or adjust certain sections as needed for your project's specifics. For followers and following under 1500.
