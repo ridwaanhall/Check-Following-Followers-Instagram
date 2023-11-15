@@ -1,4 +1,5 @@
 import os
+import csv
 from bs4 import BeautifulSoup
 
 # Get the current working directory
@@ -17,8 +18,14 @@ if os.path.exists(file_path):
     # Extract information about users from HTML
     user_info_divs = soup.find_all('div', class_='x1dm5mii')
 
-    # Open a new file for writing
-    with open(os.path.join(current_dir, 'followers_data.txt'), 'w', encoding='utf-8') as output_file:
+    # Open a new CSV file for writing
+    csv_file_path = os.path.join(current_dir, 'followers_data.csv')
+    with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
+        csv_writer = csv.writer(csv_file)
+        
+        # Write header row to CSV file
+        csv_writer.writerow(['Username', 'name', 'profile_url'])
+
         for user_info_div in user_info_divs:
             # Find URL profile picture
             img_tag = user_info_div.find('img', draggable='false')
@@ -35,13 +42,16 @@ if os.path.exists(file_path):
             full_name_tag = user_info_div.find('span', class_='x1lliihq')
             full_name = full_name_tag.text if full_name_tag else "Full name not found"
 
-            # Write the information to the file
-            output_file.write(f"Username: {username}\n")
-            output_file.write(f"Full Name: {full_name}\n")
-            output_file.write(f"Profile URL: {profile_url}\n")
-            output_file.write("------\n")
+            # Write the information to the CSV file
+            csv_writer.writerow([username, full_name, profile_url])
 
-    print("Output saved to followers_data.txt")
+            # Print the information to the console
+            print(f"Username: {username}")
+            print(f"Full Name: {full_name}")
+            print(f"Profile URL: {profile_url}")
+            print("------")
+
+    print(f"Output saved to followers_data.csv")
 
 else:
     print(f"File not found: {file_path}")
