@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 
 # Read HTML content from the file
-with open('code_followers.txt', 'r', encoding='utf-8') as file:
+file_path = 'html_content.txt'
+with open(file_path, 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 soup = BeautifulSoup(html_content, 'html.parser')
