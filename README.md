@@ -1,7 +1,9 @@
 # Check Following Followers Instagram
+1. Sample Result
 ![Sample Result](images/result.png)
+
 ## Description
-This project serves as a tool for processing and analyzing data related to people we follow and those who follow us on Instagram. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
+This project serves as a tool for processing and analyzing data. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
 
 ## Installation
 1. Make sure you have Python installed on your computer. [Download Python](https://www.python.org/downloads/)
