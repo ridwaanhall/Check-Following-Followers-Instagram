@@ -12,11 +12,12 @@ This project serves as a tool for processing and analyzing data. It provides ins
 ## Installation
 1. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or install with [pip](https://pypi.org/project/beautifulsoup4/)
 ```bash
-    pip install beautifulsoup4
+pip install beautifulsoup4
+```
 2. [pandas](https://pandas.pydata.org/) or install with [pip](https://pypi.org/project/pandas/)
 ```bash
     pip install pandas
-
+```
 ## Before Usage (DON'T SKIP THIS STEP)
 ![How to use](images/how_to_use.png "How to use")
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
