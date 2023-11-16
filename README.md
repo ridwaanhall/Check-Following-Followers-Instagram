@@ -16,7 +16,11 @@ pip install beautifulsoup4
 ```
 2. [pandas](https://pandas.pydata.org/) or install with [pip](https://pypi.org/project/pandas/)
 ```bash
-    pip install pandas
+pip install pandas
+```
+3. You can combine the installation with the following command:
+```bash
+pip install beautifulsoup4 pandas
 ```
 ## Before Usage (DON'T SKIP THIS STEP)
 ![How to use](images/how_to_use.png "How to use")
