@@ -22,6 +22,9 @@ pip install pandas
 ```bash
 pip install beautifulsoup4 pandas
 ```
+4. If you got any errors, please contact me.
+
+
 ## Before Usage (DON'T SKIP THIS STEP)
 ![How to use](images/how_to_use.png "How to use")
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
