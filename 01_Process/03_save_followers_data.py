@@ -54,6 +54,8 @@ if os.path.exists(file_path):
                 txt_file.write(f"name: {full_name}\n")
                 txt_file.write(f"profile_url: {profile_url}\n")
                 txt_file.write("------\n")
+                
+                # print(f'user with username: {username} has been saved')
 
         print(f"Output saved to followers_data.csv and followers_data.txt")
 
