@@ -7,7 +7,15 @@ This project serves as a tool for processing and analyzing data. It provides ins
 ## Installation
 1. Make sure you have Python installed on your computer. [Download Python](https://www.python.org/downloads/)
 2. Download the project or copy the code into your project.
-3. Install the required library by running the following command in the terminal or command prompt:
+3. Install the required librarys.
+
+## Installation
+1. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or install with [pip](https://pypi.org/project/beautifulsoup4/)
+```bash
+    pip install beautifulsoup4
+2. [pandas](https://pandas.pydata.org/) or install with [pip](https://pypi.org/project/pandas/)
+```bash
+    pip install pandas
 
 ## Before Usage (DON'T SKIP THIS STEP)
 ![How to use](images/how_to_use.png "How to use")
