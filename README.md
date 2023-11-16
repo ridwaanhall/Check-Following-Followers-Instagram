@@ -1,5 +1,5 @@
-# Check Following FOllowers Instagram
-
+# Check Following Followers Instagram
+![Sample Result](images/result.png)
 ## Description
 This project serves as a tool for processing and analyzing data related to people we follow and those who follow us on Instagram. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
 
