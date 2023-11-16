@@ -9,9 +9,12 @@ This project serves as a tool for processing and analyzing data related to peopl
 3. Install the required library by running the following command in the terminal or command prompt:
 
 ## Usage
-1. Place change data inside the HTML file from an Instagram follower profile in the '01_process' directory with the name 'followers_html.txt' and 'following_html.txt'.
+1. Place change data inside the txt file from an Instagram follower and following in the '01_process' directory with the name 'followers_html.txt' and 'following_html.txt'.
 2. Run the script `03_save_followers_data.py` to extract and save follower data.
-3. View the results in the `followers_data.csv` and `followers_data.txt` files.
+3. Run the script `04_save_following_data.py` to extract and save following data.
+4. View the results in the `followers_data.csv`, `followers_data.txt`, `following_data.csv`, and `following_data.txt` files.
+5. In the `02_analyze`
+
 
 ## Contribution
 If you would like to contribute to this project, please create a pull request and let us know about the proposed changes.
