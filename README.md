@@ -30,10 +30,7 @@ This project serves as a tool for processing and analyzing data. It provides ins
 If you would like to contribute to this project, please create a pull request and let us know about the proposed changes.
 
 ## License
-
-## Next Project
-- Add Following Data Scraper
-- Processing Data who follows you, who you follow, who you both follow, and who you don't follow.
+This project is licensed under the MIT License.
 
 ---
 **Note**: Be sure to replace or adjust certain sections as needed for your project's specifics. For followers and following under 1500.
