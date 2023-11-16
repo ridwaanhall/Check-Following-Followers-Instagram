@@ -31,8 +31,23 @@ print(f"You follow but don't follow back       : {len(not_following_back)}")
 print(f"You are followed but don't follow back : {len(not_followed_back)}")
 print(f"Follow each other                      : {len(follow_each_other)}")
 
+
+# # list of users who follow you
+# print('\nthis is user who follow you (followers):')
+# print(f'{followers_of_you}')
+
+# # list of users who you follow them
+# print('\nthis is user who you follow them (following):')
+# print(f'{followers_of_you}')
+
 # list of users who don't follow you back
 print('\nthis is user who don\'t follow you back:')
 print(f"{not_following_back}")
 
-# Add your code here
+# # list of users who follow you, but dont follow back
+# print('\nthis is user who follow you, but you dont follow back:')
+# print(f"{not_followed_back}")
+
+# # list of users who follow each other
+# print('\nthis is user who follow each other:')
+# print(f"{follow_each_other}")
