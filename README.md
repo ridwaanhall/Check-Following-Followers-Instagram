@@ -9,6 +9,15 @@ This project serves as a tool for processing and analyzing data. It provides ins
 2. Download the project or copy the code into your project.
 3. Install the required library by running the following command in the terminal or command prompt:
 
+## Before Usage (DON'T SKIP THIS STEP)
+![How to use](images/how_to_use.png "How to use")
+1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
+2. Click on the "Followers" button.
+3. Inspect the followers page and extract the HTML code. Make sure to scroll down to the bottom of the page.
+4. Click on the "Following" button.
+5. Inspect the following page and extract the HTML code. Make sure to scroll down to the bottom of the page.
+6. Copy and paste the HTML code into a text file.
+
 ## Usage
 1. Place change data inside the txt file from an Instagram follower and following in the `01_process` directory with the name `followers_html.txt` and `following_html.txt`.
 2. Run the script `03_save_followers_data.py` to extract and save follower data.
