@@ -14,7 +14,7 @@ This project serves as a tool for processing and analyzing data related to peopl
 3. Run the script `04_save_following_data.py` to extract and save following data.
 4. View the results in the `followers_data.csv`, `followers_data.txt`, `following_data.csv`, and `following_data.txt` files.
 5. In the `02_analyze` directory, run the script `01_knowing_data.py`. This script will analyze the data and show followers and following counts.
-6. In the `02_analyze` directory, run the script `02_checking_data.py`. This script will analyze the data and show users we follow, users who follow us, users who don't follow us back, users we don't follow but follow us, and users who follow each other with us. with add list of users who don't follow back.
+6. Run the script `02_checking_data.py`. This script will analyze the data and show users we follow, users who follow us, users who don't follow us back, users we don't follow but follow us, and users who follow each other with us. with add list of users who don't follow back.
 
 ## Contribution
 If you would like to contribute to this project, please create a pull request and let us know about the proposed changes.
