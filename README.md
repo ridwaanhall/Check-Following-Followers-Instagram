@@ -9,7 +9,7 @@ This project serves as a tool for processing and analyzing data. It provides ins
 2. Download the project or copy the code into your project.
 3. Install the required librarys.
 
-## Installation
+## Install Librarys
 1. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or install with [pip](https://pypi.org/project/beautifulsoup4/)
 ```bash
 pip install beautifulsoup4
