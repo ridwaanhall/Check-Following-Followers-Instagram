@@ -1,5 +1,5 @@
 # Check Following Followers Instagram
-![Sample Result](images/result.png "This is the result of my awesome project.")
+![Sample Result](ichecking_data_v.1.0.0.png "This is the result of my awesome project.")
 
 ## Description
 This project serves as a tool for processing and analyzing data. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
