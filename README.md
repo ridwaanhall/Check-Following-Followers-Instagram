@@ -1,12 +1,11 @@
 # Check Following Followers Instagram
 ![Sample Result](images/checking_data_v.1.0.0.png "This is the result of my awesome project.")
 
-## Confused
-if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or [message me](https://url.erbyl.repl.co/contact) for the tutorial.
-
-
 ## Description
 This project serves as a tool for processing and analyzing data. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
+
+## Confused
+if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data txt in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or [message me](https://url.erbyl.repl.co/contact) for the tutorial.
 
 ## Installation
 1. Make sure you have Python installed on your computer. [Download Python](https://www.python.org/downloads/)
@@ -32,12 +31,13 @@ pip install beautifulsoup4 pandas
 
 ## Before Usage (DON'T SKIP THIS STEP)
 ![How to use](images/how_to_use_v.2.0.0.png "How to use")
-![How to use](images/how_to_use_v.2.1.0.png "How to use")
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
 2. Click on the "Followers" button.
 3. Inspect the followers page, make to **mobile interface**, and extract the HTML code. Make sure to scroll down to the bottom of the page.
 4. Click on the "Following" button.
 5. Inspect the following page, make to **mobile interface**, and extract the HTML code. Make sure to scroll down to the bottom of the page.
+
+![How to use](images/how_to_use_v.2.1.0.png "How to use")
 6. Copy and paste the HTML code into a text file.
 7. For followers, place the HTML code in the `00_html_folder` directory with the name `v3_followers_html.txt`.
 8. For following, place the HTML code in the `00_html_folder` directory with the name `v3_following_html.txt`.
