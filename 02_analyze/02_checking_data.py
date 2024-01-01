@@ -63,15 +63,3 @@ print(f"{follow_each_other}")
 # list of users who don't follow you back
 print('\nthis is user who don\'t follow you back:')
 print(f"{not_following_back}")
-
-
-'''
-data : {
-    'followers_of_you': followers_of_you,
-    'following_by_you': following_by_you,
-    'not_following_back': not_following_back,
-    'not_followed_back': not_followed_back,
-    'follow_each_other': follow_each_other
-}
-
-'''
