@@ -31,9 +31,9 @@ pip install beautifulsoup4 pandas
 ![How to use](images/how_to_use_v.2.1.0.png "How to use")
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
 2. Click on the "Followers" button.
-3. Inspect the followers page, make to mobile interface, and extract the HTML code. Make sure to scroll down to the bottom of the page.
+3. Inspect the followers page, make to **mobile interface**, and extract the HTML code. Make sure to scroll down to the bottom of the page.
 4. Click on the "Following" button.
-5. Inspect the following page, make to mobile interface, and extract the HTML code. Make sure to scroll down to the bottom of the page.
+5. Inspect the following page, make to **mobile interface**, and extract the HTML code. Make sure to scroll down to the bottom of the page.
 6. Copy and paste the HTML code into a text file.
 7. For followers, place the HTML code in the `00_html_folder` directory with the name `v3_followers_html.txt`.
 8. For following, place the HTML code in the `00_html_folder` directory with the name `v3_following_html.txt`.
