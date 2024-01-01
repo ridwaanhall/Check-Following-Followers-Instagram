@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 current_dir = os.getcwd()
 
 # Define the path to the HTML file
-file_path = os.path.join(current_dir, '00_html_folder', 'v2_following_html.txt')
+file_path = os.path.join(current_dir, '00_html_folder', 'v3_following_html.txt')
 
 # Check if the file exists
 if os.path.exists(file_path):
@@ -19,7 +19,7 @@ if os.path.exists(file_path):
     user_info_divs = soup.find_all('div', class_='x1dm5mii')
 
     # Open a new CSV file for writing
-    csv_file_path = os.path.join(current_dir, 'results_folder', 'following_data.csv')
+    csv_file_path = os.path.join(current_dir, '03_results_folder', 'following_data.csv')
     with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
         csv_writer = csv.writer(csv_file)
 
@@ -27,7 +27,7 @@ if os.path.exists(file_path):
         csv_writer.writerow(['username', 'name', 'profile_url'])
 
         # Open a new text file for writing
-        txt_file_path = os.path.join(current_dir, 'results_folder', 'following_data.txt')
+        txt_file_path = os.path.join(current_dir, '03_results_folder', 'following_data.txt')
         with open(txt_file_path, 'w', encoding='utf-8') as txt_file:
 
             for user_info_div in user_info_divs:
