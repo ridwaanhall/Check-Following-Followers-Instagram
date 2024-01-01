@@ -28,9 +28,9 @@ follow_each_other = followers_of_you.intersection(following_by_you)
 print('this is count of users who:')
 print(f"Followers of you                       : {len(followers_of_you)}")
 print(f"Following by you                       : {len(following_by_you)}")
-print(f"You follow but don't follow back       : {len(not_following_back)}")
 print(f"You are followed but don't follow back : {len(not_followed_back)}")
 print(f"Follow each other                      : {len(follow_each_other)}")
+print(f"YOU FOLLOW BUT DON'T FOLLOW BACK       : {len(not_following_back)}")
 
 
 # list of users who follow you
