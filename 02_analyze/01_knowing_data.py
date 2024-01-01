@@ -1,8 +1,8 @@
 import pandas as pd
 
 # read csv data
-df_followers = pd.read_csv('followers_data.csv')
-df_following = pd.read_csv('following_data.csv')
+df_followers = pd.read_csv('03_results_folder/followers_data.csv')
+df_following = pd.read_csv('03_results_folder/following_data.csv')
 
 # count the number of unique usernames
 followers_count = df_followers['username'].nunique()
