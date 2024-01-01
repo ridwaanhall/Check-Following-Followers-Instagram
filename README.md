@@ -2,7 +2,7 @@
 ![Sample Result](images/checking_data_v.1.0.0.png "This is the result of my awesome project.")
 
 ## Confused
-if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory. or message me on [url.erbyl.repl.co](https://url.erbyl.repl.co/contact)
+if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or message me on [url.erbyl.repl.co](https://url.erbyl.repl.co/contact)
 
 
 ## Description
