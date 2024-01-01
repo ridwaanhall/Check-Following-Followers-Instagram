@@ -1,6 +1,10 @@
 # Check Following Followers Instagram
 ![Sample Result](images/checking_data_v.1.0.0.png "This is the result of my awesome project.")
 
+## Confused
+if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory. or message me on [url.erbyl.repl.co](https://url.erbyl.repl.co/contact)
+
+
 ## Description
 This project serves as a tool for processing and analyzing data. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
 
