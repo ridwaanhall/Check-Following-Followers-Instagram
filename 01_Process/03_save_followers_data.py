@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 current_dir = os.getcwd()
 
 # Define the path to the HTML file
-file_path = os.path.join(current_dir, '01_process', 'followers_html.txt')
+file_path = os.path.join(current_dir, '01_process', 'v2_followers_html.txt')
 
 # Check if the file exists
 if os.path.exists(file_path):
