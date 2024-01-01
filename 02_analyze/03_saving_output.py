@@ -8,19 +8,12 @@ df_following = pd.read_csv('03_results_folder/following_data.csv')
 followers_list = df_followers['username'].tolist()
 following_list = df_following['username'].tolist()
 
-# Find out who follows you
-followers_of_you = set(followers_list)
 
-# Find out who you follow
+followers_of_you = set(followers_list)
 following_by_you = set(following_list)
 
-# Find out who you follow but doesn't follow you back
 not_following_back = following_by_you - followers_of_you
-
-# Find out who follows you but you don't follow back
 not_followed_back = followers_of_you - following_by_you
-
-# Find out who follows each other
 follow_each_other = followers_of_you.intersection(following_by_you)
 
 
