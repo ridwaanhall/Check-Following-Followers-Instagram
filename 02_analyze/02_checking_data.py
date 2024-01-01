@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Read CSV data
-df_followers = pd.read_csv('followers_data.csv')
-df_following = pd.read_csv('following_data.csv')
+df_followers = pd.read_csv('03_results_folder/followers_data.csv')
+df_following = pd.read_csv('03_results_folder/following_data.csv')
 
 # Get lists of followers and following
 followers_list = df_followers['username'].tolist()
@@ -25,7 +25,7 @@ follow_each_other = followers_of_you.intersection(following_by_you)
 
 
 # Save the data to a text file
-with open('instagram_data.txt', 'w') as file:
+with open('03_results_folder/instagram_data.txt', 'w') as file:
     file.write('data : {\n')
     file.write(f"    'followers_of_you': {followers_of_you},\n")
     file.write(f"    'following_by_you': {following_by_you},\n")
@@ -52,10 +52,6 @@ print(f'{followers_of_you}')
 print('\nthis is user who you follow them (following):')
 print(f'{followers_of_you}')
 
-# list of users who don't follow you back
-print('\nthis is user who don\'t follow you back:')
-print(f"{not_following_back}")
-
 # list of users who follow you, but dont follow back
 print('\nthis is user who follow you, but you dont follow back:')
 print(f"{not_followed_back}")
@@ -63,6 +59,10 @@ print(f"{not_followed_back}")
 # list of users who follow each other
 print('\nthis is user who follow each other:')
 print(f"{follow_each_other}")
+
+# list of users who don't follow you back
+print('\nthis is user who don\'t follow you back:')
+print(f"{not_following_back}")
 
 
 '''
