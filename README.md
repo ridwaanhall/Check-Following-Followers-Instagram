@@ -22,27 +22,32 @@ pip install pandas
 ```bash
 pip install beautifulsoup4 pandas
 ```
+
 4. If you got any errors, please [contact me](https://url.erbyl.repl.co/contact).
 
 
 ## Before Usage (DON'T SKIP THIS STEP)
-![How to use](images/how_to_use.png "How to use")
+![How to use](images/how_to_use_v.2.0.0.png "How to use")
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
 2. Click on the "Followers" button.
-3. Inspect the followers page and extract the HTML code. Make sure to scroll down to the bottom of the page.
+3. Inspect the followers page, make to mobile interface, and extract the HTML code. Make sure to scroll down to the bottom of the page.
 4. Click on the "Following" button.
-5. Inspect the following page and extract the HTML code. Make sure to scroll down to the bottom of the page.
+5. Inspect the following page, make to mobile interface, and extract the HTML code. Make sure to scroll down to the bottom of the page.
 6. Copy and paste the HTML code into a text file.
-7. For followers, place the HTML code in the `01_process` directory with the name `followers_html.txt`.
-8. For following, place the HTML code in the `01_process` directory with the name `following_html.txt`.
+7. For followers, place the HTML code in the `00_html_folder` directory with the name `v3_followers_html.txt`.
+8. For following, place the HTML code in the `00_html_folder` directory with the name `v3_following_html.txt`.
 
 ## Usage
-1. Place change data inside the txt file from an Instagram follower and following in the `01_process` directory with the name `followers_html.txt` and `following_html.txt`.
-2. Run the script `03_save_followers_data.py` to extract and save follower data.
-3. Run the script `04_save_following_data.py` to extract and save following data.
-4. View the results in the `followers_data.csv`, `followers_data.txt`, `following_data.csv`, and `following_data.txt` files.
+1. Place change data inside the txt file from an Instagram follower and following in the `00_html_folder` directory with the name `v3_followers_html.txt` and `v3_following_html.txt`.
+2. Run the script in folder `01_process/03_save_followers_data.py` to extract and save follower data.
+3. Run the script in folder `01_process/04_save_following_data.py` to extract and save following data.
+4. View the results in foldername `03_results_folder` with filename is `followers_data.csv`, `followers_data.txt`, `following_data.csv`, `following_data.txt`, and `instagram_data.txt` files.
 5. In the `02_analyze` directory, run the script `01_knowing_data.py`. This script will analyze the data and show followers and following counts.
-6. Run the script `02_checking_data.py`. This script will analyze the data and show users we follow, users who follow us, users who don't follow us back, users we don't follow but follow us, and users who follow each other with us. with add list of users who don't follow back.
+6. In the `02_analyze` directory, Run the script `02_checking_data.py`. This script will analyze the data and show users we follow, users who follow us, users who don't follow us back, users we don't follow but follow us, and users who follow each other with us. with add list of users who don't follow back.
+7. In the `02_analyze` directory, Run the script `03_saving_output.py`. This script will save the output in the `03_results_folder/instagram_data.txt`.
+
+## Feedback
+If you have any feedback or suggestions, please [contact me](https://url.erbyl.repl.co/contact).
 
 ## Contribution
 If you would like to contribute to this project, please create a pull request and let us know about the proposed changes.
