@@ -22,7 +22,7 @@ pip install pandas
 ```bash
 pip install beautifulsoup4 pandas
 ```
-4. If you got any errors, please [contact me](https://my-portfolio.ridwaanhall.repl.co/contact/).
+4. If you got any errors, please [contact me](https://url.erbyl.repl.co/contact).
 
 
 ## Before Usage (DON'T SKIP THIS STEP)
