@@ -24,17 +24,6 @@ not_followed_back = followers_of_you - following_by_you
 follow_each_other = followers_of_you.intersection(following_by_you)
 
 
-# Save the data to a text file
-with open('03_results_folder/instagram_data.txt', 'w') as file:
-    file.write('data : {\n')
-    file.write(f"    'followers_of_you': {followers_of_you},\n")
-    file.write(f"    'following_by_you': {following_by_you},\n")
-    file.write(f"    'not_following_back': {not_following_back},\n")
-    file.write(f"    'not_followed_back': {not_followed_back},\n")
-    file.write(f"    'follow_each_other': {follow_each_other}\n")
-    file.write('}\n')
-
-
 # Print or use the results as needed
 print('this is count of users who:')
 print(f"Followers of you                       : {len(followers_of_you)}")
@@ -46,20 +35,20 @@ print(f"Follow each other                      : {len(follow_each_other)}")
 
 # list of users who follow you
 print('\nthis is user who follow you (followers):')
-print(f'{followers_of_you}')
+print(followers_of_you)
 
 # list of users who you follow them
 print('\nthis is user who you follow them (following):')
-print(f'{followers_of_you}')
+print(followers_of_you)
 
 # list of users who follow you, but dont follow back
 print('\nthis is user who follow you, but you dont follow back:')
-print(f"{not_followed_back}")
+print(not_followed_back)
 
 # list of users who follow each other
 print('\nthis is user who follow each other:')
-print(f"{follow_each_other}")
+print(follow_each_other)
 
 # list of users who don't follow you back
 print('\nthis is user who don\'t follow you back:')
-print(f"{not_following_back}")
+print(not_following_back)
