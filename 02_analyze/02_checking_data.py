@@ -39,7 +39,7 @@ print(followers_of_you)
 
 # list of users who you follow them
 print('\nthis is user who you follow them (following):')
-print(followers_of_you)
+print(following_by_you)
 
 # list of users who follow you, but dont follow back
 print('\nthis is user who follow you, but you dont follow back:')
