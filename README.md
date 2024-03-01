@@ -1,27 +1,37 @@
 # Check Following Followers Instagram
+
 ![Sample Result](images/checking_data_v.1.0.0.png "This is the result of my awesome project.")
 
 ## Description
+
 This project serves as a tool for processing and analyzing data. It provides insights into our followers, following, mutual followers, and users we follow but who don't follow back.
 
 ## Confused
+
 if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data txt in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or [message me](https://url.erbyl.repl.co/contact) for the Guide.
 
 ## Installation
+
 1. Make sure you have Python installed on your computer. [Download Python](https://www.python.org/downloads/)
 2. Download the project or copy the code into your project.
 3. Install the required librarys.
 
 ## Install Librarys
+
 1. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or install with [pip](https://pypi.org/project/beautifulsoup4/)
+
 ```bash
 pip install beautifulsoup4
 ```
+
 2. [pandas](https://pandas.pydata.org/) or install with [pip](https://pypi.org/project/pandas/)
+
 ```bash
 pip install pandas
 ```
+
 3. You can combine the installation with the following command:
+
 ```bash
 pip install beautifulsoup4 pandas
 ```
@@ -30,7 +40,9 @@ pip install beautifulsoup4 pandas
 
 
 ## Before Usage (DON'T SKIP THIS STEP)
+
 ![How to use](images/how_to_use_v.2.0.0.png "How to use")
+
 1. Open your instagram account and navigate to the following page: https://www.instagram.com/username/
 2. Click on the "Followers" button.
 3. Inspect the followers page, make to **mobile interface**, and extract the HTML code. Make sure to scroll down to the bottom of the page.
@@ -43,6 +55,7 @@ pip install beautifulsoup4 pandas
 8. For following, place the HTML code in the `00_html_folder` directory with the name `v3_following_html.txt`.
 
 ## Usage
+
 1. Place change data inside the txt file from an Instagram follower and following in the `00_html_folder` directory with the name `v3_followers_html.txt` and `v3_following_html.txt`.
 2. Run the script in folder `01_process/03_save_followers_data.py` to extract and save follower data.
 3. Run the script in folder `01_process/04_save_following_data.py` to extract and save following data.
