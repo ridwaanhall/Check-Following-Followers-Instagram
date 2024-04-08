@@ -6,7 +6,7 @@ class SocialMediaAnalyzer:
     def __init__(self, following_file):
         self.df_following = pd.read_csv(following_file)
 
-    def download_profile_pictures(self, folder_name='04_profile_pictures/images_following'):
+    def download_profile_pictures(self, folder_name):
         if not os.path.exists(folder_name):
             os.makedirs(folder_name)
 
@@ -24,5 +24,11 @@ class SocialMediaAnalyzer:
                 print(f"Skipping {username} because profile URL is not provided.")
 
 if __name__ == "__main__":
+    folder_name = input("Enter additional folder name to save profile pictures (press Enter for default): ")
+    if folder_name == '':
+        folder_name = "04_profile_pictures/images_following"
+    else:
+        folder_name = f"04_profile_pictures/images_following/{folder_name}"
     analyzer = SocialMediaAnalyzer('03_results_folder/following_data.csv')
-    analyzer.download_profile_pictures()
+    analyzer.download_profile_pictures(folder_name)
+
