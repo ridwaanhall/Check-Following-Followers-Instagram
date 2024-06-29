@@ -8,7 +8,7 @@ This project serves as a tool for processing and analyzing data. It provides ins
 
 ## Confused
 
-if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data txt in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or [message me](https://url.erbyl.repl.co/contact) for the Guide.
+if you are confused, just run all scripts from the `01_process` directory to `02_analyze` directory and make sure you change the data txt in `00_html_folder` with filename `v3_followers_html.txt` and `v3_following_html.txt` with step in 'Before Usage (DON'T SKIP THIS STEP)'. or [message me](https://www.linkedin.com/in/ridwaanhall) for the Guide.
 
 ## Installation
 
@@ -36,7 +36,7 @@ pip install pandas
 pip install beautifulsoup4 pandas
 ```
 
-4. If you got any errors, please [contact me](https://url.erbyl.repl.co/contact).
+4. If you got any errors, please [contact me](https://www.linkedin.com/in/ridwaanhall).
 
 
 ## Before Usage (DON'T SKIP THIS STEP)
