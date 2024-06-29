@@ -72,7 +72,7 @@ pip install beautifulsoup4 pandas
 
 ## Feedback
 
-If you have any feedback or suggestions, please [contact me](https://url.erbyl.repl.co/contact).
+If you have any feedback or suggestions, please [contact me](https://www.linkedin.com/in/ridwaanhall).
 
 ## Contribution
 
