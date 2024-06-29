@@ -1,4 +1,6 @@
 import pandas as pd
+from datetime import datetime
+
 
 class SocialMediaAnalyzer:
     def __init__(self, followers_file, following_file):
@@ -34,6 +36,7 @@ class SocialMediaAnalyzer:
         print('\nUsers who you follow but don\'t follow you back:', not_following_back)
 
 if __name__ == "__main__":
-    analyzer = SocialMediaAnalyzer('03_results_folder/followers_data.csv', '03_results_folder/following_data.csv')
+    date_str = datetime.now().strftime('%Y_%m_%d')
+    analyzer = SocialMediaAnalyzer('03_results_folder/followers/' + date_str + '_followers.csv', '03_results_folder/following/' + date_str + '_following.csv')
     analyzer.print_summary()
     analyzer.print_user_lists()

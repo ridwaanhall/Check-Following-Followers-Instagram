@@ -1,6 +1,7 @@
 import os
 import csv
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 class FollowersDataExtractor:
     def __init__(self, html_file_path, output_folder):
@@ -15,8 +16,9 @@ class FollowersDataExtractor:
             soup = BeautifulSoup(followers_html, 'html.parser')
             user_info_divs = soup.find_all('div', class_='x1dm5mii')
 
-            csv_file_path = os.path.join(self.output_folder, 'followers_data.csv')
-            txt_file_path = os.path.join(self.output_folder, 'followers_data.txt')
+            date_str = datetime.now().strftime('%Y_%m_%d')
+            csv_file_path = os.path.join(self.output_folder, f'{date_str}_followers.csv')
+            txt_file_path = os.path.join(self.output_folder, f'{date_str}_followers.txt')
 
             with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file, \
                  open(txt_file_path, 'w', encoding='utf-8') as txt_file:
@@ -38,14 +40,14 @@ class FollowersDataExtractor:
                     txt_file.write(f"username: {username}\nname: {full_name}\nprofile_url: {profile_url}\n------\n")
                     print(f'User with username: {username} has been saved')
 
-            print(f"Output saved to followers_data.csv and followers_data.txt")
+            print(f"Output saved to {csv_file_path} and {txt_file_path}")
         else:
             print(f"File not found: {self.html_file_path}")
 
 if __name__ == "__main__":
     current_dir = os.getcwd()
     html_file_path = os.path.join(current_dir, '00_html_folder', 'v3_followers_html.txt')
-    output_folder = os.path.join(current_dir, '03_results_folder')
+    output_folder = os.path.join(current_dir, '03_results_folder', 'followers')
     
     extractor = FollowersDataExtractor(html_file_path, output_folder)
     extractor.extract_followers_data()

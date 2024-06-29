@@ -1,4 +1,6 @@
 import pandas as pd
+from datetime import datetime
+
 
 class SocialMediaData:
     def __init__(self, followers_file, following_file):
@@ -19,7 +21,8 @@ class SocialMediaData:
         print(self.df_following)
 
 if __name__ == "__main__":
-    social_media_data = SocialMediaData('03_results_folder/followers_data.csv', '03_results_folder/following_data.csv')
+    date_str = datetime.now().strftime('%Y_%m_%d')
+    social_media_data = SocialMediaData('03_results_folder/followers/' + date_str + '_followers.csv', '03_results_folder/following/' + date_str + '_following.csv')
     
     followers_count, following_count = social_media_data.count_unique_users()
     print('Followers and following count:')

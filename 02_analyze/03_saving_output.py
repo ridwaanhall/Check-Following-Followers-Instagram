@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 
 class SocialMediaAnalyzer:
     def __init__(self, followers_file, following_file):
@@ -15,7 +16,7 @@ class SocialMediaAnalyzer:
         follow_each_other = followers_of_you.intersection(following_by_you)
         return followers_of_you, following_by_you, not_following_back, not_followed_back, follow_each_other
 
-    def save_to_file(self, filename='03_results_folder/instagram_data.txt'):
+    def save_to_file(self, filename):
         followers_of_you, following_by_you, not_following_back, not_followed_back, follow_each_other = self.find_relationships()
         with open(filename, 'w') as file:
             file.write('data : {\n')
@@ -36,6 +37,11 @@ class SocialMediaAnalyzer:
         print(f"YOU FOLLOW BUT DON'T FOLLOW BACK       : {len(not_following_back)}")
 
 if __name__ == "__main__":
-    analyzer = SocialMediaAnalyzer('03_results_folder/followers_data.csv', '03_results_folder/following_data.csv')
-    analyzer.save_to_file()
+    today = datetime.now().strftime('%Y_%m_%d')
+    followers_file = f'03_results_folder/followers/{today}_followers.csv'
+    following_file = f'03_results_folder/following/{today}_following.csv'
+    output_file = f'03_results_folder/data/{today}_data.txt'
+
+    analyzer = SocialMediaAnalyzer(followers_file, following_file)
+    analyzer.save_to_file(output_file)
     analyzer.print_summary()
