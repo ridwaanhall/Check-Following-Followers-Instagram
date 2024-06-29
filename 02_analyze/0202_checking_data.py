@@ -29,11 +29,11 @@ class SocialMediaAnalyzer:
     def print_user_lists(self):
         followers_of_you, following_by_you, not_followed_back, not_following_back, follow_each_other = self.find_relationships()
         print('\nThis is the list of users:')
+        print('\nUsers who you follow but don\'t follow you back:', not_following_back)
         print('Followers of you (followers):', followers_of_you)
         print('\nFollowing by you (following):', following_by_you)
         print('\nFollowers of you who you don\'t follow back:', not_followed_back)
         print('\nFollow each other:', follow_each_other)
-        print('\nUsers who you follow but don\'t follow you back:', not_following_back)
 
 if __name__ == "__main__":
     date_str = datetime.now().strftime('%Y_%m_%d')
